@@ -1,0 +1,8 @@
+[package]
+name = "rust-neo4j-mytutorial"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.39.2", features = ["full"] }
+neo4rs = "0.8.0"

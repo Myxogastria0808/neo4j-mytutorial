@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  neo4j:
+    container_name: neo4j
+    image: neo4j:5.23.0
+    ports:
+      - 7474:7474 # HTTP (http://localhost:${NEO4J_HTTP_PORT}/browser/)
+      - 7687:7687 # BOLT (clientのワチャワチャするポート)
+    volumes:
+      - ./neo4j/data:/data
+      - ./neo4j/logs:/logs
